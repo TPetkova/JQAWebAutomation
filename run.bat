@@ -1,5 +1,3 @@
 set projectLocation=C:\Users\User\IdeaProjects\JQAModul4
 cd %projectLocation%
-set classpath=%projectLocation%\bin;%projectLocation%\lib\*
-java org.testng.TestNG %projectLocation%\testng.xml
-pause
+mvn clean test -DxmlFilePath=testng.xml
